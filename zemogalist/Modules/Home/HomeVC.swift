@@ -34,7 +34,6 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        UIApplication.shared.statusBarStyle = .lightContent
         navigationController?.navigationBar.barTintColor = Color.shared.green
         
         // Navigation bar
@@ -85,6 +84,7 @@ class HomeVC: UIViewController {
         indicator.startAnimating()
         
         onDatabaseChanged()
+        loadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
