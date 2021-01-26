@@ -62,6 +62,14 @@ class DatabaseReader {
         self.items = self.items.filter({ $0 != item })
         self.context.delete(item)
     }
+    func deleteAll() {
+        DispatchQueue.global().async {
+            for item in self.items {
+                self.context.delete(item)
+            }
+            self.items.removeAll()
+        }
+    }
     func markAsRead(_ post: Post) {
         post.unread = false
         self.saveContext()

@@ -13,6 +13,7 @@ public class Color {
     public static let shared = Color()
 
     public let blue = UIColor.init(hexString: "#FF005DFF")
+    public let red = UIColor.init(hexString: "#FFFB2025")
     public let green = UIColor.init(hexString: "#FF00AA00")
     public let grayBackground = UIColor.init(hexString: "#FFEFEFEF")
 }

@@ -30,7 +30,16 @@ class HomeVC: UIViewController {
     lazy var emptyState = EmptyStateView()
     lazy var refreshControl = UIRefreshControl()
     lazy var indicator = UIActivityIndicatorView()
-    
+
+    private let deleteButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("delete_all".localized(), for: .normal)
+        button.backgroundColor = Color.shared.red
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(deleteAll), for: .touchUpInside)
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -56,11 +65,20 @@ class HomeVC: UIViewController {
             $0.centerX  |=| view.s_centerX
         }
         
+        // Delete all button
+        view.addSubview(deleteButton)
+        deleteButton.snp.makeConstraints {
+            $0.width    |=| view.s_width * 0.5
+            $0.height   |=| 30
+            $0.centerX  |=| view.s_centerX
+            $0.bottom   |=| view.s_bottom - UIConstants.bottomMargin
+        }
+        
         // Table view
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.top      |=| segmentedControl.s_bottom + 10
-            $0.bottom   |=| view.s_bottom
+            $0.bottom   |=| deleteButton.s_top - 10
             $0.left     |=| view.s_left
             $0.right    |=| view.s_right
         }
@@ -116,7 +134,23 @@ class HomeVC: UIViewController {
     @objc func switchControl() {
         self.onDatabaseChanged()
     }
-    
+
+    @objc func deleteAll() {
+        let alert = UIAlertController(title: "delete_all".localized(), message: "delete_confirmation".localized(), preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "delete_all".localized(), style: UIAlertAction.Style.default) { _ in
+            self.deleteAllAnimated()
+        })
+        alert.addAction(UIAlertAction(title: "cancel".localized(), style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    private func deleteAllAnimated() {
+        let indexes : [Int] = Array(0...self.posts.count-1)
+        self.posts.removeAll()
+        self.tableView.deleteRows(at: indexes.map({ IndexPath(row: $0, section: 0) }), with: .fade)
+        DatabaseReader.shared.deleteAll()
+    }
+
 }
 
 extension HomeVC : DatabaseSubscriber {

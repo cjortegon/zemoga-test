@@ -20,4 +20,21 @@ class UIConstants {
         }
     }
 
+    static var bottomMargin: CGFloat {
+        if #available(iOS 11.0, *) {
+            return UIConstants.mainWindow?.safeAreaInsets.bottom ?? 0
+        }
+        return 0
+    }
+
+    static var mainWindow: UIWindow? {
+        let keyWindow = UIApplication.shared.connectedScenes
+                .filter({$0.activationState == .foregroundActive})
+                .map({$0 as? UIWindowScene})
+                .compactMap({$0})
+                .first?.windows
+                .filter({$0.isKeyWindow}).first
+        return keyWindow
+    }
+
 }

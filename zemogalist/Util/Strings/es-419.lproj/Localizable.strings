@@ -11,6 +11,9 @@
 "continue" = "Continuar";
 "all" = "Todos";
 "favorites" = "Favoritos";
+"delete_all" = "Borrar todos";
+"delete_confirmation" = "¿Desea borrar todos los posts?";
+"cancel" = "Cancel";
 "posts" = "Publicaciones";
 "post" = "Publicación";
 "no_messages" = "No hay mensajes";
