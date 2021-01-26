@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  zemogalist
+
+  Created by Camilo Ortegon on 24/01/21.
+  
+*/
+
+"welcome" = "Bienvenid@ a ";
+"test_by_camilo" = "Esto es una prueba para aplicar a un cargo como desarrollador iOS, hecha por Camilo Ortegón";
+"continue" = "Continuar";
+"all" = "Todos";
+"favorites" = "Favoritos";
+"posts" = "Publicaciones";
+"post" = "Publicación";
+"no_messages" = "No hay mensajes";
+"description" = "Descripción";
+"user" = "Usuario";
+"comments" = "Comentarios";
+"name" = "Nombre";
+"email" = "Email";
+"phone" = "Teléfono";
+"website" = "Página web";

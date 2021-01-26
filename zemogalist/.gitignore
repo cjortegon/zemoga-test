@@ -1,0 +1,60 @@
+# Mac
+.DS_Store
+*/.DS_Store
+*.DS_Store
+*Breakpoints_v2.xcbkptlist
+*/Breakpoints_v2.xcbkptlist
+# User specific files
+*/UserInterfaceState.xcuserstate
+
+## idea
+.idea
+*/.idea/*
+
+#Pods
+Pods/
+*/Pods/
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.zip
+*.db
+
+## Aditional
+*/xcschememanagement.plist
+xcuserdata/
+*/node_modules/*
+node_modules
+
+build
+output_directory
+*/!*.xcworkspace/contents.xcworkspacedata
+*/codesigndoc_exports/
+
+## Swiftlint
+.swiftlint.yml
+
+## Certificates
+*.mobileprovision
+*.cer
+
+## Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Other
+results.csv
+*.generated.swift
+
+# Test
+*.db
+

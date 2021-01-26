@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "zemoga.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

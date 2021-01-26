@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		556B23C0BC14152303610EFF /* Pods_zemogalist_zemogalistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134546819542C21185EC0DA0 /* Pods_zemogalist_zemogalistUITests.framework */; };
+		5617B91625BE888300053C80 /* UIScrollView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617B91525BE888300053C80 /* UIScrollView+Util.swift */; };
+		5617B92425BF1AA300053C80 /* DetailsView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617B92325BF1AA300053C80 /* DetailsView+TableView.swift */; };
+		56708EBE25BDC274004849E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708EBD25BDC274004849E3 /* AppDelegate.swift */; };
+		56708EC025BDC274004849E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708EBF25BDC274004849E3 /* SceneDelegate.swift */; };
+		56708EC225BDC274004849E3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708EC125BDC274004849E3 /* HomeVC.swift */; };
+		56708EC525BDC274004849E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56708EC325BDC274004849E3 /* Main.storyboard */; };
+		56708EC825BDC274004849E3 /* zemogalist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56708EC625BDC274004849E3 /* zemogalist.xcdatamodeld */; };
+		56708ECA25BDC277004849E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56708EC925BDC277004849E3 /* Assets.xcassets */; };
+		56708ECD25BDC277004849E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56708ECB25BDC277004849E3 /* LaunchScreen.storyboard */; };
+		56708ED825BDC277004849E3 /* zemogalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708ED725BDC277004849E3 /* zemogalistTests.swift */; };
+		56708EE325BDC277004849E3 /* zemogalistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708EE225BDC277004849E3 /* zemogalistUITests.swift */; };
+		56708EF525BDC9CE004849E3 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708EF325BDC9CE004849E3 /* Post+CoreDataClass.swift */; };
+		56708F1525BDCB84004849E3 /* Snapkit+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F0F25BDCB84004849E3 /* Snapkit+Layout.swift */; };
+		56708F1625BDCB84004849E3 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F1025BDCB84004849E3 /* LocalStorage.swift */; };
+		56708F1725BDCB84004849E3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F1125BDCB84004849E3 /* AppColors.swift */; };
+		56708F1825BDCB84004849E3 /* ImageTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F1225BDCB84004849E3 /* ImageTextfield.swift */; };
+		56708F1925BDCB84004849E3 /* Toolbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F1325BDCB84004849E3 /* Toolbars.swift */; };
+		56708F1A25BDCB85004849E3 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F1425BDCB84004849E3 /* UIConstants.swift */; };
+		56708F2125BDCBEA004849E3 /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F2025BDCBEA004849E3 /* LandingVC.swift */; };
+		56708F6325BE27B6004849E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56708F6525BE27B6004849E3 /* Localizable.strings */; };
+		56708F6E25BE2BD1004849E3 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56708F6D25BE2BD1004849E3 /* String+Localizable.swift */; };
+		56A0DC7825BE707400559FE0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0DC7725BE707400559FE0 /* DetailsView.swift */; };
+		56EF23D125BE2EDC00DA5F7C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23D025BE2EDC00DA5F7C /* PostCell.swift */; };
+		56EF23D625BE2F4500DA5F7C /* HomeVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23D525BE2F4500DA5F7C /* HomeVC+TableView.swift */; };
+		56EF23E725BE47DD00DA5F7C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23E625BE47DD00DA5F7C /* API.swift */; };
+		56EF23F025BE48BE00DA5F7C /* DatabaseReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23EF25BE48BE00DA5F7C /* DatabaseReader.swift */; };
+		56EF23F825BE641500DA5F7C /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23F725BE641500DA5F7C /* EmptyStateView.swift */; };
+		56EF23FE25BE658500DA5F7C /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF23FD25BE658500DA5F7C /* DetailsVC.swift */; };
+		8B983B618F8B89C7A6BC5444 /* Pods_zemogalist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FCFF49E9C6F3AAEB4BF70D /* Pods_zemogalist.framework */; };
+		9EAC0E2FAD4D152974B7624C /* Pods_zemogalistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C307E62D84BE88E9759CB0 /* Pods_zemogalistTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56708ED425BDC277004849E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56708EB225BDC274004849E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56708EB925BDC274004849E3;
+			remoteInfo = zemogalist;
+		};
+		56708EDF25BDC277004849E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56708EB225BDC274004849E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56708EB925BDC274004849E3;
+			remoteInfo = zemogalist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056A0D5788902C1B9CE0ECEC /* Pods-zemogalistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalistTests.debug.xcconfig"; path = "Target Support Files/Pods-zemogalistTests/Pods-zemogalistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05C307E62D84BE88E9759CB0 /* Pods_zemogalistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogalistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134546819542C21185EC0DA0 /* Pods_zemogalist_zemogalistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogalist_zemogalistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FCFF49E9C6F3AAEB4BF70D /* Pods_zemogalist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogalist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		254D6B71684F8BADD6C4A99B /* Pods-zemogalist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalist.debug.xcconfig"; path = "Target Support Files/Pods-zemogalist/Pods-zemogalist.debug.xcconfig"; sourceTree = "<group>"; };
+		29E47C30932D79E7B1D012E2 /* Pods-zemogalist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalist.release.xcconfig"; path = "Target Support Files/Pods-zemogalist/Pods-zemogalist.release.xcconfig"; sourceTree = "<group>"; };
+		4F2AADBF81759C608BBD78D8 /* Pods-zemogalist-zemogalistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalist-zemogalistUITests.debug.xcconfig"; path = "Target Support Files/Pods-zemogalist-zemogalistUITests/Pods-zemogalist-zemogalistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5617B91525BE888300053C80 /* UIScrollView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Util.swift"; sourceTree = "<group>"; };
+		5617B92325BF1AA300053C80 /* DetailsView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsView+TableView.swift"; sourceTree = "<group>"; };
+		56708EBA25BDC274004849E3 /* zemogalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zemogalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56708EBD25BDC274004849E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56708EBF25BDC274004849E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		56708EC125BDC274004849E3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		56708EC425BDC274004849E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56708EC725BDC274004849E3 /* zemogalist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = zemogalist.xcdatamodel; sourceTree = "<group>"; };
+		56708EC925BDC277004849E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56708ECC25BDC277004849E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56708ECE25BDC277004849E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56708ED325BDC277004849E3 /* zemogalistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zemogalistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56708ED725BDC277004849E3 /* zemogalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogalistTests.swift; sourceTree = "<group>"; };
+		56708ED925BDC277004849E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56708EDE25BDC277004849E3 /* zemogalistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zemogalistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56708EE225BDC277004849E3 /* zemogalistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogalistUITests.swift; sourceTree = "<group>"; };
+		56708EE425BDC277004849E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56708EF325BDC9CE004849E3 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56708F0F25BDCB84004849E3 /* Snapkit+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Snapkit+Layout.swift"; sourceTree = "<group>"; };
+		56708F1025BDCB84004849E3 /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		56708F1125BDCB84004849E3 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		56708F1225BDCB84004849E3 /* ImageTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTextfield.swift; sourceTree = "<group>"; };
+		56708F1325BDCB84004849E3 /* Toolbars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbars.swift; sourceTree = "<group>"; };
+		56708F1425BDCB84004849E3 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		56708F2025BDCBEA004849E3 /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
+		56708F6425BE27B6004849E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56708F6925BE2839004849E3 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		56708F6D25BE2BD1004849E3 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		56730E5D66D4BF0AC205E890 /* Pods-zemogalist-zemogalistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalist-zemogalistUITests.release.xcconfig"; path = "Target Support Files/Pods-zemogalist-zemogalistUITests/Pods-zemogalist-zemogalistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56A0DC7725BE707400559FE0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		56EF23D025BE2EDC00DA5F7C /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		56EF23D525BE2F4500DA5F7C /* HomeVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableView.swift"; sourceTree = "<group>"; };
+		56EF23E625BE47DD00DA5F7C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		56EF23EF25BE48BE00DA5F7C /* DatabaseReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseReader.swift; sourceTree = "<group>"; };
+		56EF23F725BE641500DA5F7C /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		56EF23FD25BE658500DA5F7C /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		70F880BD8AD4613E7D5968D7 /* Pods-zemogalistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogalistTests.release.xcconfig"; path = "Target Support Files/Pods-zemogalistTests/Pods-zemogalistTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56708EB725BDC274004849E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B983B618F8B89C7A6BC5444 /* Pods_zemogalist.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708ED025BDC277004849E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAC0E2FAD4D152974B7624C /* Pods_zemogalistTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708EDB25BDC277004849E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556B23C0BC14152303610EFF /* Pods_zemogalist_zemogalistUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56708EB125BDC274004849E3 = {
+			isa = PBXGroup;
+			children = (
+				56708EBC25BDC274004849E3 /* zemogalist */,
+				56708ED625BDC277004849E3 /* zemogalistTests */,
+				56708EE125BDC277004849E3 /* zemogalistUITests */,
+				56708EBB25BDC274004849E3 /* Products */,
+				B254095CBF6AC3ADBAB9378B /* Pods */,
+				96594676611D410FD6FD045A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56708EBB25BDC274004849E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56708EBA25BDC274004849E3 /* zemogalist.app */,
+				56708ED325BDC277004849E3 /* zemogalistTests.xctest */,
+				56708EDE25BDC277004849E3 /* zemogalistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56708EBC25BDC274004849E3 /* zemogalist */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23E425BE479E00DA5F7C /* Core */,
+				56708EFA25BDC9DC004849E3 /* Models */,
+				56708F1E25BDCB9E004849E3 /* Modules */,
+				56708F0E25BDCB2A004849E3 /* Util */,
+				56708EBD25BDC274004849E3 /* AppDelegate.swift */,
+				56708EBF25BDC274004849E3 /* SceneDelegate.swift */,
+				56708EC325BDC274004849E3 /* Main.storyboard */,
+				56708EC925BDC277004849E3 /* Assets.xcassets */,
+				56708ECB25BDC277004849E3 /* LaunchScreen.storyboard */,
+				56708ECE25BDC277004849E3 /* Info.plist */,
+				56708EC625BDC274004849E3 /* zemogalist.xcdatamodeld */,
+			);
+			path = zemogalist;
+			sourceTree = "<group>";
+		};
+		56708ED625BDC277004849E3 /* zemogalistTests */ = {
+			isa = PBXGroup;
+			children = (
+				56708ED725BDC277004849E3 /* zemogalistTests.swift */,
+				56708ED925BDC277004849E3 /* Info.plist */,
+			);
+			path = zemogalistTests;
+			sourceTree = "<group>";
+		};
+		56708EE125BDC277004849E3 /* zemogalistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56708EE225BDC277004849E3 /* zemogalistUITests.swift */,
+				56708EE425BDC277004849E3 /* Info.plist */,
+			);
+			path = zemogalistUITests;
+			sourceTree = "<group>";
+		};
+		56708EFA25BDC9DC004849E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56708EF325BDC9CE004849E3 /* Post+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56708F0E25BDCB2A004849E3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				56708F3825BDCF29004849E3 /* Strings */,
+				56708F1125BDCB84004849E3 /* AppColors.swift */,
+				56708F1225BDCB84004849E3 /* ImageTextfield.swift */,
+				56708F1025BDCB84004849E3 /* LocalStorage.swift */,
+				56708F0F25BDCB84004849E3 /* Snapkit+Layout.swift */,
+				56708F1325BDCB84004849E3 /* Toolbars.swift */,
+				56708F1425BDCB84004849E3 /* UIConstants.swift */,
+				5617B91525BE888300053C80 /* UIScrollView+Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		56708F1E25BDCB9E004849E3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23FC25BE657A00DA5F7C /* Details */,
+				56708F7225BE2C6D004849E3 /* Home */,
+				56708F1F25BDCBB7004849E3 /* Landing */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		56708F1F25BDCBB7004849E3 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				56708F2025BDCBEA004849E3 /* LandingVC.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		56708F3825BDCF29004849E3 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				56708F6525BE27B6004849E3 /* Localizable.strings */,
+				56708F6D25BE2BD1004849E3 /* String+Localizable.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		56708F7225BE2C6D004849E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23F725BE641500DA5F7C /* EmptyStateView.swift */,
+				56708EC125BDC274004849E3 /* HomeVC.swift */,
+				56EF23D525BE2F4500DA5F7C /* HomeVC+TableView.swift */,
+				56EF23D025BE2EDC00DA5F7C /* PostCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		56EF23E425BE479E00DA5F7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23E525BE47AA00DA5F7C /* API */,
+				56EF23EE25BE48A300DA5F7C /* Database */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		56EF23E525BE47AA00DA5F7C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23E625BE47DD00DA5F7C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		56EF23EE25BE48A300DA5F7C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23EF25BE48BE00DA5F7C /* DatabaseReader.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		56EF23FC25BE657A00DA5F7C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				56EF23FD25BE658500DA5F7C /* DetailsVC.swift */,
+				56A0DC7725BE707400559FE0 /* DetailsView.swift */,
+				5617B92325BF1AA300053C80 /* DetailsView+TableView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		96594676611D410FD6FD045A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FCFF49E9C6F3AAEB4BF70D /* Pods_zemogalist.framework */,
+				134546819542C21185EC0DA0 /* Pods_zemogalist_zemogalistUITests.framework */,
+				05C307E62D84BE88E9759CB0 /* Pods_zemogalistTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B254095CBF6AC3ADBAB9378B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				254D6B71684F8BADD6C4A99B /* Pods-zemogalist.debug.xcconfig */,
+				29E47C30932D79E7B1D012E2 /* Pods-zemogalist.release.xcconfig */,
+				4F2AADBF81759C608BBD78D8 /* Pods-zemogalist-zemogalistUITests.debug.xcconfig */,
+				56730E5D66D4BF0AC205E890 /* Pods-zemogalist-zemogalistUITests.release.xcconfig */,
+				056A0D5788902C1B9CE0ECEC /* Pods-zemogalistTests.debug.xcconfig */,
+				70F880BD8AD4613E7D5968D7 /* Pods-zemogalistTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56708EB925BDC274004849E3 /* zemogalist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56708EE725BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalist" */;
+			buildPhases = (
+				E15652F74CE2B760FC61B895 /* [CP] Check Pods Manifest.lock */,
+				56708EB625BDC274004849E3 /* Sources */,
+				56708EB725BDC274004849E3 /* Frameworks */,
+				56708EB825BDC274004849E3 /* Resources */,
+				4DFD852AABC4EB6014C81FDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zemogalist;
+			productName = zemogalist;
+			productReference = 56708EBA25BDC274004849E3 /* zemogalist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56708ED225BDC277004849E3 /* zemogalistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56708EEA25BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalistTests" */;
+			buildPhases = (
+				7C9851965E9BB001E8F916F8 /* [CP] Check Pods Manifest.lock */,
+				56708ECF25BDC277004849E3 /* Sources */,
+				56708ED025BDC277004849E3 /* Frameworks */,
+				56708ED125BDC277004849E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56708ED525BDC277004849E3 /* PBXTargetDependency */,
+			);
+			name = zemogalistTests;
+			productName = zemogalistTests;
+			productReference = 56708ED325BDC277004849E3 /* zemogalistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56708EDD25BDC277004849E3 /* zemogalistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56708EED25BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalistUITests" */;
+			buildPhases = (
+				EA3B1E7704DB7E53C9193DE8 /* [CP] Check Pods Manifest.lock */,
+				56708EDA25BDC277004849E3 /* Sources */,
+				56708EDB25BDC277004849E3 /* Frameworks */,
+				56708EDC25BDC277004849E3 /* Resources */,
+				99425513FCBAF7AECD426F19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56708EE025BDC277004849E3 /* PBXTargetDependency */,
+			);
+			name = zemogalistUITests;
+			productName = zemogalistUITests;
+			productReference = 56708EDE25BDC277004849E3 /* zemogalistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56708EB225BDC274004849E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					56708EB925BDC274004849E3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					56708ED225BDC277004849E3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 56708EB925BDC274004849E3;
+					};
+					56708EDD25BDC277004849E3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 56708EB925BDC274004849E3;
+					};
+				};
+			};
+			buildConfigurationList = 56708EB525BDC274004849E3 /* Build configuration list for PBXProject "zemogalist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"es-419",
+			);
+			mainGroup = 56708EB125BDC274004849E3;
+			productRefGroup = 56708EBB25BDC274004849E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56708EB925BDC274004849E3 /* zemogalist */,
+				56708ED225BDC277004849E3 /* zemogalistTests */,
+				56708EDD25BDC277004849E3 /* zemogalistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56708EB825BDC274004849E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56708ECD25BDC277004849E3 /* LaunchScreen.storyboard in Resources */,
+				56708F6325BE27B6004849E3 /* Localizable.strings in Resources */,
+				56708ECA25BDC277004849E3 /* Assets.xcassets in Resources */,
+				56708EC525BDC274004849E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708ED125BDC277004849E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708EDC25BDC277004849E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DFD852AABC4EB6014C81FDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogalist/Pods-zemogalist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogalist/Pods-zemogalist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zemogalist/Pods-zemogalist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C9851965E9BB001E8F916F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogalistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99425513FCBAF7AECD426F19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogalist-zemogalistUITests/Pods-zemogalist-zemogalistUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogalist-zemogalistUITests/Pods-zemogalist-zemogalistUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zemogalist-zemogalistUITests/Pods-zemogalist-zemogalistUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15652F74CE2B760FC61B895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogalist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3B1E7704DB7E53C9193DE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogalist-zemogalistUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56708EB625BDC274004849E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5617B91625BE888300053C80 /* UIScrollView+Util.swift in Sources */,
+				56EF23F825BE641500DA5F7C /* EmptyStateView.swift in Sources */,
+				56A0DC7825BE707400559FE0 /* DetailsView.swift in Sources */,
+				5617B92425BF1AA300053C80 /* DetailsView+TableView.swift in Sources */,
+				56708EC225BDC274004849E3 /* HomeVC.swift in Sources */,
+				56708EBE25BDC274004849E3 /* AppDelegate.swift in Sources */,
+				56708EF525BDC9CE004849E3 /* Post+CoreDataClass.swift in Sources */,
+				56708EC825BDC274004849E3 /* zemogalist.xcdatamodeld in Sources */,
+				56708F2125BDCBEA004849E3 /* LandingVC.swift in Sources */,
+				56708F1525BDCB84004849E3 /* Snapkit+Layout.swift in Sources */,
+				56708F1825BDCB84004849E3 /* ImageTextfield.swift in Sources */,
+				56EF23D125BE2EDC00DA5F7C /* PostCell.swift in Sources */,
+				56708F1725BDCB84004849E3 /* AppColors.swift in Sources */,
+				56EF23FE25BE658500DA5F7C /* DetailsVC.swift in Sources */,
+				56708F1625BDCB84004849E3 /* LocalStorage.swift in Sources */,
+				56708F1A25BDCB85004849E3 /* UIConstants.swift in Sources */,
+				56EF23F025BE48BE00DA5F7C /* DatabaseReader.swift in Sources */,
+				56EF23D625BE2F4500DA5F7C /* HomeVC+TableView.swift in Sources */,
+				56708EC025BDC274004849E3 /* SceneDelegate.swift in Sources */,
+				56708F6E25BE2BD1004849E3 /* String+Localizable.swift in Sources */,
+				56EF23E725BE47DD00DA5F7C /* API.swift in Sources */,
+				56708F1925BDCB84004849E3 /* Toolbars.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708ECF25BDC277004849E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56708ED825BDC277004849E3 /* zemogalistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56708EDA25BDC277004849E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56708EE325BDC277004849E3 /* zemogalistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56708ED525BDC277004849E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56708EB925BDC274004849E3 /* zemogalist */;
+			targetProxy = 56708ED425BDC277004849E3 /* PBXContainerItemProxy */;
+		};
+		56708EE025BDC277004849E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56708EB925BDC274004849E3 /* zemogalist */;
+			targetProxy = 56708EDF25BDC277004849E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56708EC325BDC274004849E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56708EC425BDC274004849E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56708ECB25BDC277004849E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56708ECC25BDC277004849E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		56708F6525BE27B6004849E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56708F6425BE27B6004849E3 /* en */,
+				56708F6925BE2839004849E3 /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56708EE525BDC277004849E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56708EE625BDC277004849E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56708EE825BDC277004849E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254D6B71684F8BADD6C4A99B /* Pods-zemogalist.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56708EE925BDC277004849E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E47C30932D79E7B1D012E2 /* Pods-zemogalist.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56708EEB25BDC277004849E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056A0D5788902C1B9CE0ECEC /* Pods-zemogalistTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalistTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zemogalist.app/zemogalist";
+			};
+			name = Debug;
+		};
+		56708EEC25BDC277004849E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F880BD8AD4613E7D5968D7 /* Pods-zemogalistTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalistTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zemogalist.app/zemogalist";
+			};
+			name = Release;
+		};
+		56708EEE25BDC277004849E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2AADBF81759C608BBD78D8 /* Pods-zemogalist-zemogalistUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zemogalist;
+			};
+			name = Debug;
+		};
+		56708EEF25BDC277004849E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56730E5D66D4BF0AC205E890 /* Pods-zemogalist-zemogalistUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 744E6C2WT2;
+				INFOPLIST_FILE = zemogalistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.mountainreacher.zemogalistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zemogalist;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56708EB525BDC274004849E3 /* Build configuration list for PBXProject "zemogalist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56708EE525BDC277004849E3 /* Debug */,
+				56708EE625BDC277004849E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56708EE725BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56708EE825BDC277004849E3 /* Debug */,
+				56708EE925BDC277004849E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56708EEA25BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56708EEB25BDC277004849E3 /* Debug */,
+				56708EEC25BDC277004849E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56708EED25BDC277004849E3 /* Build configuration list for PBXNativeTarget "zemogalistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56708EEE25BDC277004849E3 /* Debug */,
+				56708EEF25BDC277004849E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56708EC625BDC274004849E3 /* zemogalist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56708EC725BDC274004849E3 /* zemogalist.xcdatamodel */,
+			);
+			currentVersion = 56708EC725BDC274004849E3 /* zemogalist.xcdatamodel */;
+			path = zemogalist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 56708EB225BDC274004849E3 /* Project object */;
+}
